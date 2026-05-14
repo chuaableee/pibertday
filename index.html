@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="card" class="card hidden">
+            <h1 class="title">Happy Birthday Ate! </h1>
+            <p class="message">Wishing you a day filled with love, laughter, and endless joy. May this year be your best one yet! I love You!</p>
+            <button class="reset-btn" onclick="location.reload()">Open Again</button>
+        </div>
+
+        <div id="gift-section">
+            <div class="gift-box" onclick="revealGreeting()">
+                <div class="lid"></div>
+                <div class="box"></div>
+            </div>
+            <p class="instruction">Tap the gift to open!</p>
+        </div>
+    </div>
+
+    <!-- Canvas for confetti effect -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
