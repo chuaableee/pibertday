@@ -1,0 +1,143 @@
+:root {
+    --primary-pink: #ff6b6b;
+    --secondary-blue: #4ecdc4;
+    --bg-color: #f7f9fc;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    z-index: 10;
+}
+
+/* Gift Box Animation */
+.gift-box {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: transform 0.3s;
+}
+
+.gift-box:hover {
+    transform: scale(1.1);
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    background: var(--primary-pink);
+    border-radius: 8px;
+    position: absolute;
+    bottom: 0;
+}
+
+.lid {
+    width: 110%;
+    height: 20px;
+    background: #ff5252;
+    position: absolute;
+    top: -10px;
+    left: -5%;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+/* Greeting Card */
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    max-width: 400px;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.title {
+    color: var(--primary-pink);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.message {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+.reset-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: var(--secondary-blue);
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#confetti-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 20px;
+    /* Added a deep, soft shadow for depth */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2); 
+    backdrop-filter: blur(10px);
+    max-width: 400px;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+    
+    /* Added Floating Animation */
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+
+
+
+
+
+
+
+
